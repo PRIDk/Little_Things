@@ -1,1 +1,4 @@
 I've been thinking about simple site made with react that would show translations of a word typed into input field with plain JS (after pressing a button for example) and then with React.
+
+1. You need to link php to html
+2. connect database from xampp to html
