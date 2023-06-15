@@ -6,3 +6,22 @@
 # At the end of a iteration current minimum gets placed after the first element and it goes until array is sorted
 
 # now do it in python xd
+
+# I'd love to make another list but then it wont be sorting will it
+
+listA = [3, 4, 1, 7, 9, 20, 4, 6, -12, 8, 3, 3, 1, 2, 6, 5, 0, -4]
+def selectionAlgorithm(list):
+    elementsSorted = 0
+    for i in range(0, len(list)):
+        currMin = list[i]
+        for j in range(elementsSorted, len(list)):
+            currEl = list[j]
+            if currMin > currEl:
+                currMin = currEl
+            else:
+                continue
+            list.insert(elementsSorted, list.pop(j))         
+        elementsSorted += 1 # little tab here got me thinking for 15 minutes
+    return list
+
+print(selectionAlgorithm(listA))
